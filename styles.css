@@ -1,0 +1,197 @@
+/* CSS Reset to normalize default styles across browsers */
+body, h1, h2, h3, p, ul, ol, li, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+	font-family: Georgia, serif;
+}
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+/* style rules for body and images */
+img {
+    max-width: 100%;
+    display: inline-block;
+	border-radius: 10px; 
+}
+a:link {
+   
+	color: #36486b;
+}
+
+/*Style rules for mobile viewport*/
+header{
+	border-radius: 50px; 
+	text-align: center; 
+	background-color: #fefbd8;
+	font-family: Georgia, serif;
+	color: #4040a1;
+	padding: 15px; 
+	margin-bottom: 1%; 
+	margin-top: 1%;
+}
+/*Style rules for navigation*/
+nav{
+	font-size: 2em;	
+	font-family: Georgia, serif;
+	background-color: #618685; 
+	border-radius: 25px;
+	color: #fefbd8;
+	padding: 15px; 
+	margin-bottom: 1%; 
+	margin-top: 1%;
+	text-align: center;
+	
+}
+nav ul{
+	list-style: none;
+}
+nav li{
+	font-size: 2em;	
+	font-family: Georgia, serif;
+	display: inline-block;
+	border-top: 2px solid #618685;
+
+}
+nav li a{
+	font-size: 2em;	
+	font-family: Georgia, serif;
+	display: inline-block;
+	color: #fefbd8;
+	padding: 14px 16px;
+	width: 100%;
+}
+.mobile-nav a{
+	color: #fefbd8;
+	font-family: Georgia, serif; 
+	text-align: center; 
+	font-size: 16px;
+	padding: 5%;
+	display: inline-block;
+}
+.mobile-nav a.menu-icon{
+	display: inline-block; 
+	position: fixed; 
+}
+/*Show mobile class, hide tablet-desktop class */
+.mobile{
+	display: block;
+}
+.tablet-desktop{
+	display: none; 
+}
+main{
+	border-radius: 50px; 
+	padding: 5%; 
+	background-color: #36486b;
+	color: #fefbd8;
+	font-family: Georgia, serif; 
+	font-size: 1em;
+}
+form{
+	background-color: #fefbd8;
+    font-family: Georgia, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	color: #36486b;
+	border: 2px solid #bc5a45;
+    width:auto;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.link{
+	color: #36486b;
+	font-weight: bold;
+	font-size: 2em;
+}
+.tel-link{
+	background-color: #36486b;
+	padding: 5%;
+	margin: 0 auto; 
+	line-height: 100%; 
+}
+.tel-link a{
+	color: #fefbd8;
+}
+a{
+	text-decoration: none; 
+}
+footer {
+	background-color: #4040a1;
+	margin-top: 1%; 
+	border-radius: 50px; 
+	color: #fefbd8; 
+	padding: 1%; 
+	font-size: 1em; 
+	text-align: center;
+}
+/*Media Query for Tablet viewport*/
+@media screen and (min-width: 600px){
+	.tablet-desktop{
+		display:block;
+	}
+	.mobile{
+		display: none;
+	}
+	.tel-link{
+		display:none; 
+	}
+/*Tablet Viewport*/
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.5em;
+    }
+    nav li a {
+        padding: 0.5em;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+	table{
+		border: 1px solid #000;
+		border-collapse: collapse; 
+		margin: 0 auto;
+		width: 100%;
+	}
+	caption{
+		font-size: 1.5em;
+		font-weight: bold; 
+		padding: 1%;
+	}
+	th,td{
+		border: 1px solid #000;
+		padding: 2%;
+	}
+	th{
+		background-color: #618685;
+		color: #fefbd8;
+		font-size: 1.15em;
+	}
+	#form{
+		width: 60%;
+		margin: 0 auto; 
+	}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px) {
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+    nav li a:hover {
+        color: #618685;
+        background-color: #fefbd8
+    }
+	#form{
+		width: auto;
+		margin: 0 auto; 
+	}
+}

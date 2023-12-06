@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Francois+One%7CRoboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body> 
+
+  <header>
+    <h1>Reading Rainbow</h1>
+    <h3>Reading Lists for Parents</h3>
+	<img src="images/books.jpg" alt = "Books" height = "200" width="200">
+  </header>
+
+  <nav>
+    <p>Kindergarten&nbsp;&#x2661;&nbsp;
+       1st Grade&nbsp;&#x2661;&nbsp;
+       2nd Grade&nbsp;&#x2661;&nbsp;
+       3rd Grade&nbsp;&#x2661;&nbsp;
+       4th Grade&nbsp;&#x2661;&nbsp;
+	   Book Series&nbsp;&#x2661;&nbsp;
+	   Contact</p>
+  </nav>
+   <main>
+        <div id="contact-content">
+            <h1>Contact</h1>
+            <p class="tel-link"><a href="tel:4794221434">(479)422-1434</a></p>
+            <p>Email me: <a href="mailto:smitchell@mayflowerschools.org" class="contact-email-link">smitchell@mayflowerschools.org</a></p>
+  
+                            
+        </div>
+		<h1>Book Addition Suggestion Form</h1>
+
+<form method="post" action="https://webdevbasics.net/scripts/demo.php" >
+<input type="hidden" name="sendto" id="sendto" value="smitchell@mayflowerschools.org">
+First Name:
+<input type="text" name="firstname" id="firstname" required="required" placeholder="Your first name here"><br><br>
+Last Name: 
+<input type="text" name="lastname" id="lastname" required="required" placeholder="Your last name here"><br><br>
+Phone: <input type="text" name="phone" id="phone"><br><br>
+Email: <input type="email" name= "Email" id="Email"><br><br>
+
+Grade: 
+  <select size="1" name="quantity" id="quantity">
+     <option value="Kindergarten">Kindergarten</option>
+     <option value="First">First</option>
+     <option value="Second">Second</option>
+     <option value="Third">Third</option>
+	 <option value="Fourth">Fourth</option>
+</select><br><br>
+
+Book Title:
+<input type="text" name="booktitle" id="booktitle" required="required" placeholder="Type the title of the book"><br><br>
+Author:
+<input type="text" name="author" id="author" required="required" placeholder="Type the authors full name"><br><br>
+ISBN:
+<input type="text" name="ISBN" id="ISBN" required="required" placeholder="Type the ISBN"><br><br>
+
+<fieldset>
+<legend>Where can the book be found</legend>
+   <input type="checkbox" name="amazon" id="amazon" value="yes"> Amazon<br>
+   <input type="checkbox" name="scholastic books" id="scholastic books" value="yes"> Scholastic Books<br>
+   <input type="checkbox" name="library" id="library" value="yes"> Library<br>
+</fieldset><br><br>
+
+Notes/Suggestions:<br>
+<textarea name="notes" id="notes" cols="40" rows="6">Please any notes or suggestions:</textarea><br><br>
+
+Preferred Method of Contact (in case of questions): 
+<input type="radio" name="text" id="text" value="text"> Text
+<input type="radio" name="phone call" id="phone call" value="phone call"> Phone Call
+<input type="radio" name="email" id="email" value="email"> Email
+<br><br>
+
+Date: <input type="date" name="Date" id="Date"><br><br>
+
+<input type="reset" value="Submit Form"><input type="reset" value="Start Over">
+
+</form>
